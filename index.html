@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <script>
+          let currentSectionIndex = 0;
+
+          document.addEventListener('wheel', handleScroll);
+
+          function handleScroll(event) {
+            event.preventDefault();
+
+            const delta = event.deltaY;
+            const sections = document.querySelectorAll('section');
+
+            if (delta > 0 && currentSectionIndex < sections.length + 1) {
+              currentSectionIndex++;
+            } else if (delta < 0 && currentSectionIndex > 0) {
+              currentSectionIndex--;
+            }
+
+            sections.forEach((section, index) => {
+              section.classList.remove('active');
+              if (index === currentSectionIndex) {
+                section.classList.add('active');
+                section.scrollIntoView();
+              }
+            });
+          }
+        </script>
+      <title>Renas Apostolopoulou Ceramics</title>
+   </head>
+   <body>
+
+
+     <section id="tab1">
+
+
+       <header class="header">
+
+
+       <a href="#tab1" class="logo" >Rena Apostolopoulou</a>
+       <input type="checkbox" id="check">
+       <label for="check" class="icons" >
+         <i class='bx bx-menu'id="menu-icon"></i>
+         <i class='bx bx-x' id="close-icon"></i>
+       </label>
+
+         <nav class="navbar">
+
+           <a href="#tab8">Contact</a>
+         </nav>
+       </header>
+
+
+      <div class="container">
+         <div class="card__container">
+            <article class="card__article">
+               <img src="3.jpg" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <!-- <span class="card__description">Vancouver Mountains, Canada</span>
+                  <h2 class="card__title">The Great Path</h2> -->
+                  <a href=" 2.jpg" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src=" 5.jpg" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <!-- <span class="card__description">Poon Hill, Nepal</span>
+                  <h2 class="card__title">Starry Night</h2> -->
+                  <a href=" 5.jpg" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src=" 22 (1).jpg" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <!-- <span class="card__description">Bojcin Forest, Serbia</span>
+                  <h2 class="card__title">Path Of Peace</h2> -->
+                  <a href=" 22 (1).jpg" class="card__button">Read More</a>
+               </div>
+            </article>
+         </div>
+      </div>
+      </section>
+      <section id="tab2">
+
+
+       <div class="container">
+          <div class="card__container">
+             <article class="card__article">
+                <img src=" 17.jpg" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <!-- <span class="card__description">Vancouver Mountains, Canada</span>
+                   <h2 class="card__title">The Great Path</h2> -->
+                   <a href=" 17.jpg" class="card__button">Read More</a>
+                </div>
+             </article>
+
+             <article class="card__article">
+                <img src=" 22 (2).jpg" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <!-- <span class="card__description">Poon Hill, Nepal</span>
+                   <h2 class="card__title">Starry Night</h2> -->
+                   <a href=" 22 (2).jpg" class="card__button">Read More</a>
+                </div>
+             </article>
+
+             <article class="card__article">
+                <img src=" 26 (1).jpg" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <!-- <span class="card__description">Bojcin Forest, Serbia</span>
+                   <h2 class="card__title">Path Of Peace</h2> -->
+                   <a href=" 30.jpg" class="card__button">Read More</a>
+                </div>
+             </article>
+          </div>
+       </div>
+       </section>
+
+       <section id="tab3">
+
+
+        <div class="container">
+           <div class="card__container">
+              <article class="card__article">
+                 <img src=" 22.jpg" alt="image" class="card__img">
+
+                 <div class="card__data">
+                    <!-- <span class="card__description">Vancouver Mountains, Canada</span>
+                    <h2 class="card__title">The Great Path</h2> -->
+                    <a href=" 22.jpg" class="card__button">Read More</a>
+                 </div>
+              </article>
+
+              <article class="card__article">
+                 <img src=" 20 (1).jpg" alt="image" class="card__img">
+
+                 <div class="card__data">
+                    <!-- <span class="card__description">Poon Hill, Nepal</span>
+                    <h2 class="card__title">Starry Night</h2> -->
+                    <a href=" 21 (1).jpg" class="card__button">Read More</a>
+                 </div>
+              </article>
+
+              <article class="card__article">
+                 <img src=" 27.jpg" alt="image" class="card__img">
+
+                 <div class="card__data">
+                    <!-- <span class="card__description">Bojcin Forest, Serbia</span>
+                    <h2 class="card__title">Path Of Peace</h2> -->
+                    <a href=" 28.jpg" class="card__button">Read More</a>
+                 </div>
+              </article>
+           </div>
+        </div>
+        </section>
+        <section id="tab4">
+
+
+         <div class="container">
+            <div class="card__container">
+               <article class="card__article">
+                  <img src=" 41.jpg" alt="image" class="card__img">
+
+                  <div class="card__data">
+                     <!-- <span class="card__description">Vancouver Mountains, Canada</span>
+                     <h2 class="card__title">The Great Path</h2> -->
+                     <a href=" 31 (1).jpg" class="card__button">Read More</a>
+                  </div>
+               </article>
+
+               <article class="card__article">
+                  <img src=" 34.jpg" alt="image" class="card__img">
+
+                  <div class="card__data">
+                     <!-- <span class="card__description">Poon Hill, Nepal</span>
+                     <h2 class="card__title">Starry Night</h2> -->
+                     <a href=" 35.jpg" class="card__button">Read More</a>
+                  </div>
+               </article>
+
+               <article class="card__article">
+                  <img src=" 36.jpg" alt="image" class="card__img">
+
+                  <div class="card__data">
+                     <!-- <span class="card__description">Bojcin Forest, Serbia</span>
+                     <h2 class="card__title">Path Of Peace</h2> -->
+                     <a href=" 37.jpg" class="card__button">Read More</a>
+                  </div>
+               </article>
+            </div>
+         </div>
+         </section>
+         <section id="tab5">
+
+
+          <div class="container">
+             <div class="card__container">
+                <article class="card__article">
+                   <img src=" m.jpg" alt="image" class="card__img">
+
+                   <div class="card__data">
+                      <!-- <span class="card__description">Vancouver Mountains, Canada</span>
+                      <h2 class="card__title">The Great Path</h2> -->
+                      <a href=" l.jpg" class="card__button">Read More</a>
+                   </div>
+                </article>
+
+                <article class="card__article">
+                   <img src=" d.jpg" alt="image" class="card__img">
+
+                   <div class="card__data">
+                      <!-- <span class="card__description">Poon Hill, Nepal</span>
+                      <h2 class="card__title">Starry Night</h2> -->
+                      <a href=" e.jpg" class="card__button">Read More</a>
+                   </div>
+                </article>
+
+                <article class="card__article">
+                   <img src=" k.jpg" alt="image" class="card__img">
+
+                   <div class="card__data">
+                      <!-- <span class="card__description">Bojcin Forest, Serbia</span>
+                      <h2 class="card__title">Path Of Peace</h2> -->
+                      <a href=" h.jpg" class="card__button">Read More</a>
+                   </div>
+                </article>
+             </div>
+          </div>
+          </section>
+         <section id="tab6">
+
+
+          <div class="container">
+             <div class="card__container">
+                <article class="card__article">
+                   <img src=" 39.jpg" alt="image" class="card__img">
+
+                   <div class="card__data">
+                      <!-- <span class="card__description">Vancouver Mountains, Canada</span>
+                      <h2 class="card__title">The Great Path</h2> -->
+                      <a href=" 38.jpg" class="card__button">Read More</a>
+                   </div>
+                </article>
+
+                <article class="card__article">
+                   <img src=" 42 (1).jpg" alt="image" class="card__img">
+
+                   <div class="card__data">
+                      <!-- <span class="card__description">Poon Hill, Nepal</span>
+                      <h2 class="card__title">Starry Night</h2> -->
+                      <a href=" 42.jpg" class="card__button">Read More</a>
+                   </div>
+                </article>
+
+                <article class="card__article">
+                   <img src=" 43.jpg" alt="image" class="card__img">
+
+                   <div class="card__data">
+                      <!-- <span class="card__description">Bojcin Forest, Serbia</span>
+                      <h2 class="card__title">Path Of Peace</h2> -->
+                      <a href=" 43.jpg" class="card__button">Read More</a>
+                   </div>
+                </article>
+             </div>
+          </div>
+          </section>
+          <section id="tab7">
+
+
+           <div class="container">
+              <div class="card__container">
+                 <article class="card__article">
+                    <img src=" 46.jpg" alt="image" class="card__img">
+
+                    <div class="card__data">
+                       <!-- <span class="card__description">Vancouver Mountains, Canada</span>
+                       <h2 class="card__title">The Great Path</h2> -->
+                       <a href=" 45.jpg" class="card__button">Read More</a>
+                    </div>
+                 </article>
+
+                 <article class="card__article">
+                    <img src=" s6.jpg" alt="image" class="card__img">
+
+                    <div class="card__data">
+                       <!-- <span class="card__description">Poon Hill, Nepal</span>
+                       <h2 class="card__title">Starry Night</h2> -->
+                       <a href=" a3.jpg" class="card__button">Read More</a>
+                    </div>
+                 </article>
+
+                 <article class="card__article">
+                    <img src=" e (1).jpg" alt="image" class="card__img">
+
+                    <div class="card__data">
+                       <!-- <span class="card__description">Bojcin Forest, Serbia</span>
+                       <h2 class="card__title">Path Of Peace</h2> -->
+                       <a href=" e (1).jpg" class="card__button">Read More</a>
+                    </div>
+                 </article>
+              </div>
+           </div>
+           </section>
+            <section id="tab8">
+              <div class=" container">
+              <div class=" profile-card ">
+                <div class=" row">
+                  <div class=" image">
+                    <div class="col-6">
+                      <img src=" 2.jpg" class="profile-img">
+                      <div class="text-data">
+                        <div class="name"><span class="text-center">Rena </span>Apostolopoulou</div>
+                        <div class="job">Ceramist</div>
+                      </div>
+                    </div>
+                <div class="media-buttons">
+                  <a href="https://www.facebook.com/rena.apostolopoulou.1" class="link" target=”_blank”>
+                    <i class='bx bxl-facebook-square'></i>
+                  </a>
+                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxwPsFSXbddGCtZJrlbJktnrSMqPXjZqnKBmCZSQllskXNmvHsjpXfQXFJglBDSWJtnlzr"style="background:#1da1f2" class="link" target=”_blank”>
+                    <i class='bx bxl-gmail' ></i>
+                  </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class=" container">
+          <div class=" profile-card ">
+            <div class=" row">
+              <div class=" image1">
+                <div class="col-6">
+                  <img src="IMG_6933.jpg" class="profile-img1">
+                  <div class="text-data">
+                    <div > made by: </div>
+                    <div class="name"><span class="text-center">Dean <br></span>Apostolopoulos</div>
+                    <div class="job">Programmer</br>Web designer</div>
+                  </div>
+                </div>
+            <div class="media-buttons">
+              <a href="https://www.facebook.com/apostol.din/" target=”_blank” class="link1">
+                <i class='bx bxl-facebook-square'></i>
+              </a>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTKWVQrphgQZNNzmptCgFgWMqmtSDBhzHDxhdMHbZFvJJKcKwZXQQvTnkpTCctrQlQLXVq"style="background:#1da1f2" class="link1" target=”_blank”>
+                <i class='bx bxl-gmail' ></i>
+              </a>
+
+              </a>
+              <a href="http://xn--mxaaxciakbsbababie3bfdhdci3a4f.gr/"style="background:#1da1f2" class="link1" target=”_blank”>
+              <i class='bx bxs-file-find'></i>
+              </a>
+
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+
+
+    </script>
+   </body>
+</html>
